@@ -2,16 +2,17 @@
 using System.Collections;
 
 public class UnitBehavior : MonoBehaviour {
-    int sinValue = -9;//this will cause an error hopeflly
-    private float counter = 0;
+    public float sinValue = 0 ;//for height
+    private float counter = 0 ;// cycling
 	public void posSetter (int x,int y) {
+        sinValue = x * 90;
         transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,Mathf.Sin(sinValue));
-        counter = 0;
+        counter = x;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        counter =counter ;
+        counter = counter + Time.deltaTime * 0.1f;
         counter = counter % 20;
         sinValue = counter * 90;
         transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, Mathf.Sin(sinValue));
