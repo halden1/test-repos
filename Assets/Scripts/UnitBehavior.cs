@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class UnitBehavior : MonoBehaviour {
-    public float sinValue = -90;
+    public float sinValue = 0 ;
     private float counter = sinValue;
 	public void posSetter (int x,int y) {
         sinValue = 0;
