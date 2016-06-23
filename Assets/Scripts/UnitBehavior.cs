@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class UnitBehavior : MonoBehaviour {
-    public float sinValue = 0;
-    private float counter = 0;
+    public float sinValue = -90;
+    private float counter = sinValue;
 	public void posSetter (int x,int y) {
         sinValue = 0;
         transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,Mathf.Sin(sinValue));
