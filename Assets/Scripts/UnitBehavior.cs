@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class UnitBehavior : MonoBehaviour {
-    int sinValue = -90;
+    int sinValue = -9;//this will cause an error hopeflly
     private float counter = 0;
 	public void posSetter (int x,int y) {
         transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y,Mathf.Sin(sinValue));
