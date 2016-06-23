@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class ProceduralGeneration : MonoBehaviour {
-    public int xSize = 200;
-    public int ySize = 200;
+    public int xSize = 0;
+    public int ySize = -100;
     public GameObject cube;
     // Use this for initialization
     void Start () {
